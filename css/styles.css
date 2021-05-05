@@ -524,6 +524,23 @@ img {
 .social-links {
   margin-left: 70px;
 }
+.newsletter-header {
+  font-weight: 722;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--font-on-dark-theme-color);
+
+  margin-bottom: 20px;
+}
+.main-form {
+  margin-left: 70px;
+}
+/*.form {
+  display: flex;
+}*/
 
 /*===== PORTFOLIO =====*/
 .buttons-list {
