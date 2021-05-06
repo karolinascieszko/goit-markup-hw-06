@@ -580,7 +580,8 @@ img {
 }
 
 .e-mail:hover,
-.e-mail:focus {
+.e-mail:focus,
+.e-mmail:active {
   border-color: var(--main-color);
   cursor: pointer;
 }
