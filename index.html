@@ -502,7 +502,15 @@
             Zostaw swoje dane w formularzu poniżej
           </h2>
           <label for="name" class="modal-label">Imie</label>
-          <input type="text" name="name" class="modal-input" required />
+          <div class="modal-input-wrapper">
+            <div class="modal-form-icon-name">
+              <svg class="icon-name">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+            <input type="text" name="name" class="modal-input" required />
+          </div>
+
           <label for="telefon" class="modal-label">Telefon</label>
           <input type="tel" name="telefon" class="modal-input" required />
           <label for="e-mail" class="modal-label">E-mail</label>

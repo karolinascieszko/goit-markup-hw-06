@@ -787,7 +787,9 @@ img {
   box-sizing: border-box;
   border-radius: 4px;
   width: 100%;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 .modal-textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -841,4 +843,20 @@ img {
 .modal-checkbox {
   margin-right: 8px;
 }
+.icon-name {
+  width: 12px;
+  height: 12px;
+}
+
+.modal-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+.modal-form-icon-name {
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translateY(-50%);
+}
+
 /*===== END BACKDROP =====*/
