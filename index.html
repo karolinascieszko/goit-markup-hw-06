@@ -502,9 +502,9 @@
             Zostaw swoje dane w formularzu poniżej
           </h2>
           <label for="name" class="modal-label">Imie</label>
-          <input type="text" name="name" class="modal-input" />
+          <input type="text" name="name" class="modal-input" required />
           <label for="telefon" class="modal-label">Telefon</label>
-          <input type="tel" name="telefon" class="modal-input" />
+          <input type="tel" name="telefon" class="modal-input" required />
           <label for="e-mail" class="modal-label">E-mail</label>
           <input type="mail" name="e-mail" class="modal-input" />
           <label for="komentarz" class="modal-label">Komentarz</label>
@@ -517,7 +517,7 @@
           ></textarea>
           <div class="modal-policy-wrapper">
             <div class="modal-disclaimer-wrapper">
-              <input type="checkbox" class="modal-input" />
+              <input type="checkbox" class="modal-checkbox" required />
               <label for="checkbox" class="policy-label-text"
                 >Oświadczam iż akceptuję
                 <a href="#" class="modal-policy-text-link">Regulamin</a>
