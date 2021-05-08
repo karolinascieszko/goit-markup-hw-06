@@ -467,14 +467,14 @@
         </div>
         <div class="main-form">
           <h3 class="newsletter-header">Zapisz się do newslettera</h3>
-          <form
-            class="form"
-            name="Newsletter"
-            autocomplete="on"
-            novalidate
-          >
+          <form class="form" name="Newsletter" autocomplete="on" novalidate>
             <label class="label-e-mail">
-              <input class="e-mail" type="email" name="email" placeholder="E-mail" />
+              <input
+                class="e-mail"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
 
             <button class="btn-form" type="submit">Zapisz się</button>
@@ -497,6 +497,39 @@
             />
           </svg>
         </button>
+        <form method="POST" class="modal-form">
+          <h2 class="modal-form-title">
+            Zostaw swoje dane w formularzu poniżej
+          </h2>
+          <label for="name" class="modal-label">Imie</label>
+          <input type="text" name="name" class="modal-input" />
+          <label for="telefon" class="modal-label">Telefon</label>
+          <input type="tel" name="telefon" class="modal-input" />
+          <label for="e-mail" class="modal-label">E-mail</label>
+          <input type="mail" name="e-mail" class="modal-input" />
+          <label for="komentarz" class="modal-label">Komentarz</label>
+          <textarea
+            name="komentarz"
+            id="textarea"
+            cols="30"
+            rows="10"
+            class="modal-textarea"
+          ></textarea>
+          <div class="modal-policy-wrapper">
+            <div class="modal-disclaimer-wrapper">
+              <input type="checkbox" class="modal-input" />
+              <label for="checkbox" class="policy-label-text"
+                >Oświadczam iż akceptuję
+                <a href="#" class="modal-policy-text-link">Regulamin</a>
+                i
+                <a href="#" class="modal-policy-text-link"
+                  >Politykę Prywatności</a
+                >.</label
+              >
+            </div>
+            <button class="modal-btn-form" type="submit">Wyślij</button>
+          </div>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
