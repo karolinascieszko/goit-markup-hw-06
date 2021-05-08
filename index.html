@@ -465,19 +465,23 @@
             </li>
           </ul>
         </div>
-        <div class="main-form">
-          <h3 class="newsletter-header">Zapisz się do newslettera</h3>
-          <form class="form" name="Newsletter" autocomplete="on" novalidate>
-            <label class="label-e-mail">
+        <div class="newsletter">
+          <form method="POST" class="newsletter-form">
+            <h3 class="newsletter-header">Zapisz się do newslettera</h3>
+            <div class="newsletter-input">
               <input
-                class="e-mail"
                 type="email"
                 name="email"
                 placeholder="E-mail"
+                class="newsletter-e-mail"
               />
-            </label>
 
-            <button class="btn-form" type="submit">Zapisz się</button>
+              <button class="newsletter-btn" type="submit">
+                Zapisz się<svg class="icon-send">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -522,9 +526,8 @@
           </div>
           <label for="e-mail" class="modal-label">E-mail</label>
           <div class="modal-input-wrapper">
-           
-            <input type="mail" name="e-mail" class="modal-input" />
-             <div class="modal-form-icon">
+            <input type="email" name="e-mail" class="modal-input" />
+            <div class="modal-form-icon">
               <svg class="icon-e-mail">
                 <use href="./images/icons.svg#icon-e-mail"></use>
               </svg>
@@ -536,7 +539,8 @@
             id="textarea"
             cols="30"
             rows="10"
-            class="modal-textarea" placeholder="Wprowadź tekst"
+            class="modal-textarea"
+            placeholder="Wprowadź tekst"
           ></textarea>
           <div class="modal-policy-wrapper">
             <div class="modal-disclaimer-wrapper">
