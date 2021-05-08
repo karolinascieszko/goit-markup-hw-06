@@ -852,11 +852,21 @@ img {
   position: relative;
   width: 100%;
 }
-.modal-form-icon-name {
+.modal-form-icon-name,
+.modal-form-icon-phone,
+.modal-form-icon-e-mail {
   position: absolute;
   top: 50%;
   left: 3%;
   transform: translateY(-50%);
+}
+.icon-phone {
+  width: 13px;
+  height: 13px;
+}
+.icon-e-mail {
+  width: 15px;
+  height: 12px;
 }
 
 /*===== END BACKDROP =====*/
