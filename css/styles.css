@@ -770,9 +770,11 @@ img {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
+  align-items: center;
   letter-spacing: 0.03em;
   color: var(--modal-form-title-font);
   margin-bottom: 12px;
+  width: 100%;
 }
 .modal-label {
   font-family: 'Roboto', sans-serif;
@@ -790,6 +792,7 @@ img {
   padding-bottom: 10px;
   padding-left: 30px;
   padding-top: 10px;
+  height: 40px;
 }
 .modal-textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -797,6 +800,20 @@ img {
   border-radius: 4px;
   width: 100%;
   margin-bottom: 20px;
+  height: 120px;
+  padding: 12px 16px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+}
+
+.modal-textarea::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .policy-label-text {
   font-family: 'Roboto', sans-serif;
@@ -851,10 +868,9 @@ img {
 .modal-input-wrapper {
   position: relative;
   width: 100%;
+  margin-bottom: 10px;
 }
-.modal-form-icon-name,
-.modal-form-icon-phone,
-.modal-form-icon-e-mail {
+.modal-form-icon {
   position: absolute;
   top: 50%;
   left: 3%;
@@ -867,6 +883,19 @@ img {
 .icon-e-mail {
   width: 15px;
   height: 12px;
+}
+.modal-input:focus {
+  outline: none;
+  border-color: var(--main-color);
+}
+.modal-input:focus + .modal-form-icon {
+  outline: none;
+  fill: var(--main-color);
+  border-color: var(--main-color);
+}
+.modal-textarea:focus {
+  outline: none;
+  border-color: var(--main-color);
 }
 
 /*===== END BACKDROP =====*/

@@ -503,31 +503,32 @@
           </h2>
           <label for="name" class="modal-label">Imie</label>
           <div class="modal-input-wrapper">
-            <div class="modal-form-icon-name">
+            <input type="text" name="name" class="modal-input" required />
+            <div class="modal-form-icon">
               <svg class="icon-name">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
-            <input type="text" name="name" class="modal-input" required />
           </div>
 
           <label for="telefon" class="modal-label">Telefon</label>
           <div class="modal-input-wrapper">
-            <div class="modal-form-icon-phone">
+            <input type="tel" name="telefon" class="modal-input" required />
+            <div class="modal-form-icon">
               <svg class="icon-phone">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
-            <input type="tel" name="telefon" class="modal-input" required />
           </div>
           <label for="e-mail" class="modal-label">E-mail</label>
           <div class="modal-input-wrapper">
-            <div class="modal-form-icon-e-mail">
+           
+            <input type="mail" name="e-mail" class="modal-input" />
+             <div class="modal-form-icon">
               <svg class="icon-e-mail">
                 <use href="./images/icons.svg#icon-e-mail"></use>
               </svg>
             </div>
-            <input type="mail" name="e-mail" class="modal-input" />
           </div>
           <label for="komentarz" class="modal-label">Komentarz</label>
           <textarea
@@ -535,7 +536,7 @@
             id="textarea"
             cols="30"
             rows="10"
-            class="modal-textarea"
+            class="modal-textarea" placeholder="Wprowadź tekst"
           ></textarea>
           <div class="modal-policy-wrapper">
             <div class="modal-disclaimer-wrapper">
