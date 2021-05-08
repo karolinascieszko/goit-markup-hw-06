@@ -912,4 +912,15 @@ img {
   border-color: var(--main-color);
 }
 
+.policy-label-text::before {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+.modal-checkbox:checked + .policy-label-text::before {
+  background-color: var(--main-color);
+}
 /*===== END BACKDROP =====*/

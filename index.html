@@ -507,7 +507,13 @@
           </h2>
           <label for="name" class="modal-label">Imie</label>
           <div class="modal-input-wrapper">
-            <input type="text" name="name" class="modal-input" required />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="modal-input"
+              required
+            />
             <div class="modal-form-icon">
               <svg class="icon-name">
                 <use href="./images/icons.svg#icon-name"></use>
@@ -517,7 +523,13 @@
 
           <label for="telefon" class="modal-label">Telefon</label>
           <div class="modal-input-wrapper">
-            <input type="tel" name="telefon" class="modal-input" required />
+            <input
+              type="tel"
+              name="telefon"
+              id="telefon"
+              class="modal-input"
+              required
+            />
             <div class="modal-form-icon">
               <svg class="icon-phone">
                 <use href="./images/icons.svg#icon-phone"></use>
@@ -526,7 +538,7 @@
           </div>
           <label for="e-mail" class="modal-label">E-mail</label>
           <div class="modal-input-wrapper">
-            <input type="email" name="e-mail" class="modal-input" />
+            <input type="email" name="e-mail" id="e-mail" class="modal-input" />
             <div class="modal-form-icon">
               <svg class="icon-e-mail">
                 <use href="./images/icons.svg#icon-e-mail"></use>
@@ -536,7 +548,7 @@
           <label for="komentarz" class="modal-label">Komentarz</label>
           <textarea
             name="komentarz"
-            id="textarea"
+            id="komentarz"
             cols="30"
             rows="10"
             class="modal-textarea"
@@ -544,7 +556,12 @@
           ></textarea>
           <div class="modal-policy-wrapper">
             <div class="modal-disclaimer-wrapper">
-              <input type="checkbox" class="modal-checkbox" required />
+              <input
+                type="checkbox"
+                id="checkbox"
+                class="modal-checkbox"
+                required
+              />
               <label for="checkbox" class="policy-label-text"
                 >Oświadczam iż akceptuję
                 <a href="#" class="modal-policy-text-link">Regulamin</a>
